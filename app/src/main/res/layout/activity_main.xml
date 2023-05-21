@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/marquee_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World! To work on a challenging project which provides an opportunity to enhance my technical skills and knowledge,
+this could provide me an insight into new aspects so that it would be helpful for my career. "
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:background="@color/purple_200"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/normalToastBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@color/purple_500"
+        android:padding="5dp"
+        android:text="Normal Toast"
+        android:textColor="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <Button
+        android:id="@+id/customToastBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="Custom Toast"
+        android:textColor="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toEndOf="@+id/normalToastBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch mode "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+
+</android.support.constraint.ConstraintLayout>
